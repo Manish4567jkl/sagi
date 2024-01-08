@@ -414,13 +414,32 @@ width: 100px;
 
 /* heading content */
 .head{
-  padding-top: 400px;
-  padding-right: 140px;
-  font-weight: 900;
-  font-size: 80px ;
-  color: #fff;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
 }
 
+@keyframes neonGlow {
+  0% {
+    text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f, 0 0 70px #00f, 0 0 80px #00f, 0 0 100px #00f, 0 0 150px #00f;
+  }
+  100% {
+    text-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 15px #00f, 0 0 20px #00f, 0 0 35px #00f, 0 0 40px #00f, 0 0 50px #00f, 0 0 75px #00f;
+  }
+}
+
+h1.head{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 4rem;
+  color: #fff;
+  animation: neonGlow 10s ease-in-out infinite alternate;
+}
+
+/* about page section */ 
 #About{
   min-height: 100vh;
   display: flex;
